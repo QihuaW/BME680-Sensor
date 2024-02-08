@@ -360,6 +360,8 @@ class bme680:
     
 ### Test via ncd usb-i2c connector ###
 if __name__ == "__main__":
+    print('Test for BME680.py file x1.0')
+    '''
     sensor = bme680('ncd','COM6')
     line = sensor.read([0xD0],1)[0]
     print(hex(line)) # Sanity check, returns sensor id=0x61
@@ -373,3 +375,5 @@ if __name__ == "__main__":
         results = sensor.take_measurement()
         print(results)
         time.sleep(1.0)
+
+    '''
